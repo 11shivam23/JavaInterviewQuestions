@@ -1,0 +1,20 @@
+Question -: Can we override static method in java?
+
+Answer -: In Java, you cannot override a static method in a subclass 
+because the method belongs to the class itself and not to any instance 
+of that class. Therefore, the concept of inheritance does not apply to 
+static methods.
+
+When a subclass defines a static method with the same name as a static 
+method in its superclass, it simply hides the superclass method instead 
+of overriding it. This means that the subclass method will be called only 
+if it is invoked on the subclass, and not on an instance of the superclass.
+
+In Java, the main purpose of static methods is to provide utility methods 
+that can be called without creating an instance of the class. Since static 
+methods are not associated with any instance of the class, they cannot be 
+overridden because there is no instance to which the overriding method can be applied.
+
+However, it is possible to define a static method in a subclass with the same 
+name as a static method in its superclass, but this does not constitute method 
+overriding, and it is called method hiding.
